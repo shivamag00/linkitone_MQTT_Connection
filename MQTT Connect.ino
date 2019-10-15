@@ -12,6 +12,16 @@
 #define WIFI_AUTH LWIFI_WPA  // choose from LWIFI_OPEN, LWIFI_WPA, or LWIFI_WEP.
 
 /*
+The Following are the user defined functions
+1. callback()
+2. sendAnalogData()
+3. InitWifi()
+reconnect()
+*/
+
+
+
+/*
 	Modify to your MQTT broker - Select only one
 */
 //char mqttBroker[] = "iot.eclipse.org";
