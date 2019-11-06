@@ -117,14 +117,14 @@ void sendMemCard()
   String data_A2;
   if (tp=='1')
   {
-    data_A0 = (String)analogRead( A0 );
+    data_A0 = (String)analogRead( A0 );  //temperature code here
   }
   else
    data_A0 = "f";
 
    if (gp=='1') 
    {
-    data_A1 = (String)analogRead( A1 );
+    data_A1 = (String)analogRead( A1 ); //gps code here
     data_A2 = (String)analogRead( A2 );
    }
    else
