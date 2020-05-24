@@ -50,12 +50,12 @@ $sql = "SELECT Value FROM ulow ORDER BY Time DESC LIMIT 1";
     $mail->Host = "smtp.gmail.com";
     $mail->Port = 465; // or 587
     $mail->IsHTML(true);
-    $mail->Username = "siddharthh007@gmail.com";
-    $mail->Password = "ouamdwipwaw299792458";
-    $mail->SetFrom("siddharthh007@gmail.com");
+    $mail->Username = "______________________";
+    $mail->Password = "______________________";
+    $mail->SetFrom("______________________");
     $mail->Subject = "Tilt Threshold Breached";
     $mail->Body = "Tilt exceeded. Check it!!<br>Upper Threshold=".$temp_up."<br>Lower Threshold=".$temp_down."<br>Current Tilt=".$tp;
-    $mail->AddAddress("captshivamag@gmail.com");
+    $mail->AddAddress("______________________");
 
      if(!$mail->Send()) {
         echo "Mailer Error: " . $mail->ErrorInfo;

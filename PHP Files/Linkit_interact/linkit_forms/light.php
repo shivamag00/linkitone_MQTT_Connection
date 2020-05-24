@@ -38,8 +38,8 @@ $sql = "SELECT Value FROM nlow ORDER BY Time DESC LIMIT 1";
     $tp = mysqli_real_escape_string($link, $_POST['light']);
 	if (($tp>$temp_up || $tp <$temp_down) && $tp != 'f')
 	{
-		 require("PHPMailer-master/src/PHPMailer.php");
-			require("PHPMailer-master/src/SMTP.php");
+		 require("../../PHPMailer-master/src/PHPMailer.php");
+			require("../../PHPMailer-master/src/SMTP.php");
 
     $mail = new PHPMailer\PHPMailer\PHPMailer();
     $mail->IsSMTP(); // enable SMTP
@@ -50,12 +50,12 @@ $sql = "SELECT Value FROM nlow ORDER BY Time DESC LIMIT 1";
     $mail->Host = "smtp.gmail.com";
     $mail->Port = 465; // or 587
     $mail->IsHTML(true);
-    $mail->Username = "siddharthh007@gmail.com";
-    $mail->Password = "ouamdwipwaw299792458";
-    $mail->SetFrom("siddharthh007@gmail.com");
+    $mail->Username = "______________________";
+    $mail->Password = "_____________________";
+    $mail->SetFrom("______________________");
     $mail->Subject = "Light Threshold Breached";
     $mail->Body = "Light Threshold Exceeded. Check it!!<br>Upper Threshold=".$temp_up."<br>Lower Threshold=".$temp_down."<br>Current Light=".$tp;
-    $mail->AddAddress("captshivamag@gmail.com");
+    $mail->AddAddress("______________________");
 
      if(!$mail->Send()) {
         echo "Mailer Error: " . $mail->ErrorInfo;
