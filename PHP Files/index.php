@@ -41,7 +41,7 @@
 	<div class="mainBody">
 		<form method="POST">
 			<button class="btn switch_page" formaction="./Web_UI/control_form.html">Switches</button>
-			<button class="btn threshold_page" formaction="./Web_UI/threshold_form.php">Threshold</button>
+			<button class="btn threshold_page" formaction="./Web_UI/threshold_form.html">Threshold</button>
 			<button class="btn delay_page" formaction="./Web_UI/frequency_form.html">Delays</button>
 			<button class="btn database_page" formaction="./Web_UI/request.php">Live Database</button>		
 		</form>
