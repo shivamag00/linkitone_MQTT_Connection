@@ -27,14 +27,14 @@
 			</head>
 
 			<body>
-				<form action="temperature.php" method="post" target="_blank">
+				<form action="./linkit_forms/temperature.php" method="post" target="_blank">
 					<p>
         				<label>Temperature:</label>
         				<input type="text" name="temp" value="'.$data['Temperature'].'" id="TMP" >    
     				</p>
 						<input type="submit" value="Submit" id="dem1">
 				</form>
-				<form action="gps.php" method="post" target"_blank">
+				<form action="./linkit_forms/gps.php" method="post" target"_blank">
     				<p>
         				<label>Latitude:</label>
         				<input type="text" name="lat" value="'.$data['Latitude'].'" id="LAT" >    
@@ -46,14 +46,14 @@
 	
 						<input type="submit" value="Submit" id="dem2">
 				</form>
-				<form action="tilt.php" method="post" target="_blank">
+				<form action="./linkit_forms/tilt.php" method="post" target="_blank">
 					<p>
         				<label>Tilt:</label>
         				<input type="text" name="tilt" value="'.$data['Tilt'].'" id="TMP" >    
     				</p>
 						<input type="submit" value="Submit" id="dem3">
 				</form>
-				<form action="light.php" method="post" target="_blank">
+				<form action="./linkit_forms/light.php" method="post" target="_blank">
 					<p>
         				<label>Light:</label>
         				<input type="text" name="light" value="'.$data['Light'].'" id="TMP" >    
